@@ -1,0 +1,14 @@
+tweepy
+ipython
+matplotlib
+scipy
+boto3
+numpy
+pandas
+dataset
+psycopg2
+textblob
+sqlalchemy
+datafreeze
+pytz
+vaderSentiment
