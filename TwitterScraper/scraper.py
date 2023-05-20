@@ -7,7 +7,7 @@ import tweepy
 from sqlalchemy.exc import ProgrammingError
 import sentiment_score
 import private
-import settings
+from TwitterScraper.constants import settings
 
 # Using TwitterAPI v2
 
