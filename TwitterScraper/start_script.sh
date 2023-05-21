@@ -3,8 +3,8 @@
 # Install packages from requirements.txt
 pip install -r requirements.txt
 
-# Run scraper.py
-python scraper.py
+# Run post_scraper.py
+python post_scraper.py
 
 # Cron job to drop last csv file
 # into S3 bucket and run data_dump.py
