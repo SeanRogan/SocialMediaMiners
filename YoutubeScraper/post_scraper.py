@@ -42,15 +42,15 @@ def search(query, pages=1):
         logging.warning(str(err))
     finally:
         api = connect(api_service, api_version, api_key)
-        logging.debug("api connected" + str(api))
+        logging.debug('api connected' + str(api))
         try:
-            logging.debug("first api call")
+            logging.debug('first api call')
             first_request = api.search().list(part='id,snippet',
                                               type='video',
                                               maxResults=50,
                                               order='relevance',
                                               q=query,
-                                              fields="nextPageToken,items(id(videoId), snippet(publishedAt,channelId,channelTitle,title,description))")
+                                              fields='nextPageToken,items(id(videoId), snippet(publishedAt,channelId,channelTitle,title,description))')
             response = first_request.execute()
             next_page_token = response['nextPageToken']
             results.append(response)
@@ -61,7 +61,7 @@ def search(query, pages=1):
                                                 maxResults=50,
                                                 q=query,
                                                 order='relevance',
-                                                fields="nextPageToken,items(id(videoId), snippet(publishedAt,channelId,channelTitle,title,description))",
+                                                fields='nextPageToken,items(id(videoId), snippet(publishedAt,channelId,channelTitle,title,description))',
                                                 pageToken=next_page_token)
                     response = request.execute()
                     next_page_token = response['nextPageToken']
