@@ -1,3 +1,5 @@
+## DISCLAIMER: This repo will no longer be maintained. I do not think these will work now that reddit and twitter have changed their API policies. 
+
 # SocialMediaMiners
 A collection of open source data mining scripts built to collect data on specified topics or keywords. Collect post information from Twitter, Reddit, and coming soon.. Youtube. 
 
